@@ -1,42 +1,43 @@
 ---
-description: Git authorship — never add Cursor as co-author or contributor (VoxLane)
+description: Git authorship — never add Cursor as co-author or contributor
 alwaysApply: true
 ---
 
 # Git authorship (VoxLane)
 
-This repository belongs to **Radin Reanula** only. Cursor must **never** appear in GitHub authorship, contributor lists, or commit metadata.
+This repository belongs to **Radin Reanula** only. Cursor must never appear in GitHub authorship, contributor lists, or collaborator settings.
 
 Remote: `https://github.com/RadinReanula/VoxLane.git`
 
 ## Hard rules
 
 - **Never** add `Co-authored-by: Cursor <cursoragent@cursor.com>` (or any Cursor co-author trailer) to commit messages.
-- **Never** add Cursor as a collaborator, contributor, author, or committer on commits, PRs, or releases.
+- **Never** add Cursor as a collaborator, contributor, or author on commits, PRs, or releases.
 - **Never** use `git commit --trailer` (or equivalent) to attach Cursor attribution.
-- **Never** use plain `git commit` from PowerShell or Cursor's integrated shell on Windows — the environment may inject co-author trailers without asking.
+- **Never** use the default shell `git commit` on Windows for this repo if it may inject co-author trailers.
 - Commits must list **only** the user's identity as author and committer unless the user explicitly names another human co-author.
 
-## Required commit workflow (Windows)
+## When creating commits (required workflow)
 
-When the agent creates any commit for this repo:
-
-1. Stage files with Git's native binary:
-   - `"C:\Program Files\Git\mingw64\bin\git.exe" add ...`
-2. Create the commit with **full control over the message body** using one of:
-   - `commit-tree` via Git Bash (preferred), or
-   - `"C:\Program Files\Git\mingw64\bin\git.exe" commit -F <message-file>` where the message file contains **only** the intended text (no trailers).
-3. **Verify before push** — all of these must pass:
-   - `git log -1 --format=%B` contains no `Co-authored-by`, `cursoragent`, or `cursor.com`
-   - `git log -1 --format="%an <%ae>"` and `%cn <%ce>` are the user's identity only
-4. Push only after verification succeeds.
+1. Stage changes with `git add` as usual.
+2. Create the commit with Git Bash and the native binary — **not** PowerShell `git commit`:
+   ```bash
+   GIT="/c/Program Files/Git/mingw64/bin/git.exe"
+   TREE=$("$GIT" write-tree)
+   COMMIT=$("$GIT" commit-tree "$TREE" -p HEAD <<'EOF'
+   Your commit message here.
+   EOF
+   )
+   "$GIT" reset --hard "$COMMIT"
+   ```
+3. Verify before every push:
+   ```bash
+   git log --format=%B | grep -iE 'co-authored-by|cursoragent' && echo FAIL || echo OK
+   ```
+4. If verification fails, rewrite the commit with `commit-tree` before pushing.
 
 ## When pushing to GitHub
 
-- Push only commits that pass the checks above.
-- If co-author trailers appear after a commit, **do not push**. Rewrite the commit (e.g. `commit-tree`) and verify again.
-- If history must be rewritten to remove Cursor attribution, do so before pushing and confirm with `git log --format=%B` across all commits on `main`.
-
-## If contributor attribution is wrong on GitHub
-
-Do not add more commits hoping GitHub will fix it. Rewrite local history without Cursor metadata, then force-push only when the user has asked for it or the branch has never been shared.
+- Push only commits that pass the verification above.
+- After push, confirm GitHub shows **only** Radin Reanula under Contributors.
+- If Cursor attribution reappears, stop, rewrite history with `commit-tree`, and force-push only after user approval.
