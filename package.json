@@ -1,0 +1,21 @@
+{
+  "name": "kubernetica",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "lint": "npm run lint --workspace web",
+    "typecheck": "npm run typecheck --workspace web",
+    "test": "npm run test --workspace web",
+    "test:e2e": "npm run test:e2e --workspace web"
+  },
+  "engines": {
+    "node": ">=24",
+    "npm": ">=11"
+  }
+}

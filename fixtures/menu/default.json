@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "id": "default",
+  "name": "Kubernetica Drive-Thru",
+  "currency": "USD",
+  "locale": "en-LK",
+  "timezone": "Asia/Colombo",
+  "items": [
+    {
+      "id": "classic-burger",
+      "name": "Classic Burger",
+      "description": "Beef patty, lettuce, tomato, and house sauce",
+      "base_price": "7.50",
+      "modifier_groups": [
+        {
+          "id": "cheese",
+          "name": "Cheese",
+          "min_selections": 0,
+          "max_selections": 1,
+          "choices": [
+            { "id": "american", "name": "American", "price_delta": "0.75" },
+            { "id": "cheddar", "name": "Cheddar", "price_delta": "1.00" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fries",
+      "name": "Fries",
+      "base_price": "3.00",
+      "modifier_groups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "min_selections": 1,
+          "max_selections": 1,
+          "choices": [
+            { "id": "regular", "name": "Regular", "price_delta": "0.00" },
+            { "id": "large", "name": "Large", "price_delta": "1.25" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cola",
+      "name": "Cola",
+      "base_price": "2.25"
+    }
+  ]
+}

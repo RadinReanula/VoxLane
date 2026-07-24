@@ -1,0 +1,71 @@
+export const CONTRACT_VERSION = "2026-07-01" as const;
+
+export type SessionState =
+  | "approaching"
+  | "greeting"
+  | "listening"
+  | "processing"
+  | "speaking"
+  | "confirming"
+  | "complete"
+  | "recovering"
+  | "human_help";
+
+export type OrderItem = {
+  id: string;
+  name: string;
+  quantity: number;
+  unitPrice: number;
+};
+
+export type Caption = {
+  id: string;
+  speaker: "guest" | "kubernetica" | "operator";
+  text: string;
+  final: boolean;
+  createdAt: string;
+};
+
+export type SessionEvent = {
+  id: string;
+  type: string;
+  message: string;
+  createdAt: string;
+};
+
+export type SessionDiagnostics = {
+  provider: "local-simulator" | "pipecat-smallwebrtc";
+  sessionId: string;
+  latencyMs: number | null;
+  connected: boolean;
+  generation: number;
+};
+
+export type Order = {
+  version: typeof CONTRACT_VERSION;
+  id: string;
+  currency: "USD";
+  items: OrderItem[];
+  status: "draft" | "confirmed" | "complete";
+};
+
+export type DriveThruSession = {
+  version: typeof CONTRACT_VERSION;
+  id: string;
+  lane: string;
+  state: SessionState;
+  order: Order;
+  captions: Caption[];
+  events: SessionEvent[];
+  diagnostics: SessionDiagnostics;
+  startedAt: string;
+};
+
+export type SessionCommand =
+  | { type: "vehicle_arrived" }
+  | { type: "advance" }
+  | { type: "interrupt" }
+  | { type: "request_human" }
+  | { type: "recover" }
+  | { type: "add_item"; item: Omit<OrderItem, "quantity"> }
+  | { type: "remove_item"; itemId: string };

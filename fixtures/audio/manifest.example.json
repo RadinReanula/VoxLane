@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "clips": [
+    {
+      "id": "clean-simple-order",
+      "file": "consented/clean-simple-order.wav",
+      "consent_reference": "replace-with-test-consent-id",
+      "language": "en-LK",
+      "noise_condition": "quiet",
+      "expected_transcript": "One classic burger with no onions",
+      "expected_items": [
+        {
+          "sku": "burger-classic",
+          "quantity": 1,
+          "modifiers": ["no-onion"]
+        }
+      ],
+      "speech_start_ms": 320,
+      "speech_end_ms": 2810,
+      "interruption_at_ms": null
+    }
+  ]
+}

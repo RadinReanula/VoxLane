@@ -1,0 +1,38 @@
+services:
+  voice-agent:
+    build:
+      context: ./services/voice-agent
+    environment:
+      KUBERNETICA_PROVIDER_MODE: mock
+      KUBERNETICA_DATABASE_URL: sqlite+aiosqlite:///./data/kubernetica.db
+      KUBERNETICA_ALLOWED_ORIGINS: http://localhost:3000
+    ports:
+      - "8000:8000"
+    volumes:
+      - voice-data:/app/data
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')",
+        ]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  web:
+    build:
+      context: ./apps/web
+    environment:
+      NEXT_PUBLIC_AGENT_HTTP_URL: http://localhost:8000
+      NEXT_PUBLIC_AGENT_WEBRTC_URL: http://localhost:8000/api/offer
+    ports:
+      - "3000:3000"
+    depends_on:
+      voice-agent:
+        condition: service_healthy
+
+volumes:
+  voice-data:

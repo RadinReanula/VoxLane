@@ -1,0 +1,5 @@
+"""Kubernetica voice-agent backend."""
+
+from voice_agent.app import create_app
+
+__all__ = ["create_app"]

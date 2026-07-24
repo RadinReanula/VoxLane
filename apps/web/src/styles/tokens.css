@@ -1,0 +1,21 @@
+:root {
+  --midnight: #07111f;
+  --surface: #101c2c;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --cyan: #22d3ee;
+  --green: #4ade80;
+  --amber: #fbbf24;
+  --rose: #fb7185;
+  --line: rgba(203, 213, 225, 0.14);
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --type-status: clamp(2rem, 4vw, 3.25rem);
+  --type-body: clamp(1.125rem, 1.4vw, 1.35rem);
+  --type-caption: clamp(1rem, 1.2vw, 1.15rem);
+}

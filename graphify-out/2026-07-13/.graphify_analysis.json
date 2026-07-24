@@ -1,0 +1,482 @@
+{
+  "communities": {
+    "0": [
+      "apps_web_src_app_console_page",
+      "apps_web_src_app_console_page_consolepage",
+      "apps_web_src_app_lane_page",
+      "apps_web_src_app_lane_page_lanepage",
+      "apps_web_src_components_icons",
+      "apps_web_src_components_icons_caricon",
+      "apps_web_src_components_icons_checkicon",
+      "apps_web_src_components_icons_headseticon",
+      "apps_web_src_components_icons_iconbase",
+      "apps_web_src_components_icons_micicon",
+      "apps_web_src_components_icons_sparkicon",
+      "apps_web_src_components_lane_experience",
+      "apps_web_src_components_lane_experience_client",
+      "apps_web_src_components_lane_experience_laneexperience",
+      "apps_web_src_components_lane_experience_menu",
+      "apps_web_src_components_lane_experience_money",
+      "apps_web_src_components_lane_experience_state_meta",
+      "apps_web_src_components_operator_console",
+      "apps_web_src_components_operator_console_formattime",
+      "apps_web_src_components_operator_console_operatorconsole",
+      "apps_web_src_lib_contracts",
+      "apps_web_src_lib_contracts_caption",
+      "apps_web_src_lib_contracts_contract_version",
+      "apps_web_src_lib_contracts_drivethrusession",
+      "apps_web_src_lib_contracts_order",
+      "apps_web_src_lib_contracts_orderitem",
+      "apps_web_src_lib_contracts_sessioncommand",
+      "apps_web_src_lib_contracts_sessiondiagnostics",
+      "apps_web_src_lib_contracts_sessionevent",
+      "apps_web_src_lib_contracts_sessionstate",
+      "apps_web_src_lib_session_client",
+      "apps_web_src_lib_session_client_createlocalsession",
+      "apps_web_src_lib_session_client_event",
+      "apps_web_src_lib_session_client_flow",
+      "apps_web_src_lib_session_client_reducesession",
+      "apps_web_src_lib_session_client_sessionclient",
+      "apps_web_src_lib_session_client_sessionclient_command",
+      "apps_web_src_lib_session_client_sessionclient_constructor",
+      "apps_web_src_lib_session_client_sessionclient_create",
+      "apps_web_src_lib_session_client_state_copy"
+    ],
+    "1": [
+      "protocol",
+      "services_voice_agent_tests_test_services",
+      "services_voice_agent_tests_test_services_failingprovider",
+      "services_voice_agent_tests_test_services_failingprovider_respond",
+      "services_voice_agent_tests_test_services_py_path",
+      "services_voice_agent_tests_test_services_repository",
+      "services_voice_agent_tests_test_services_slowprovider",
+      "services_voice_agent_tests_test_services_slowprovider_respond",
+      "services_voice_agent_tests_test_services_test_interruption_cancels_active_generation",
+      "services_voice_agent_tests_test_services_test_pos_is_idempotent",
+      "services_voice_agent_tests_test_services_test_provider_failure_is_safe_and_recorded",
+      "services_voice_agent_voice_agent_models_eventtype",
+      "services_voice_agent_voice_agent_orchestrator",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_init",
+      "services_voice_agent_voice_agent_orchestrator_py_decimal",
+      "services_voice_agent_voice_agent_providers",
+      "services_voice_agent_voice_agent_providers_deepgramspeechtotextprovider",
+      "services_voice_agent_voice_agent_providers_deepgramspeechtotextprovider_init",
+      "services_voice_agent_voice_agent_providers_deepgramspeechtotextprovider_transcribe",
+      "services_voice_agent_voice_agent_providers_groqlanguageprovider",
+      "services_voice_agent_voice_agent_providers_groqlanguageprovider_init",
+      "services_voice_agent_voice_agent_providers_groqlanguageprovider_respond",
+      "services_voice_agent_voice_agent_providers_languageprovider",
+      "services_voice_agent_voice_agent_providers_languageprovider_respond",
+      "services_voice_agent_voice_agent_providers_mocklanguageprovider",
+      "services_voice_agent_voice_agent_providers_mocklanguageprovider_respond",
+      "services_voice_agent_voice_agent_providers_mockpos",
+      "services_voice_agent_voice_agent_providers_mockpos_init",
+      "services_voice_agent_voice_agent_providers_providererror",
+      "services_voice_agent_voice_agent_providers_providererror_init",
+      "services_voice_agent_voice_agent_providers_py_runtimeerror",
+      "services_voice_agent_voice_agent_providers_redact",
+      "services_voice_agent_voice_agent_providers_speechtotextprovider",
+      "services_voice_agent_voice_agent_providers_speechtotextprovider_transcribe"
+    ],
+    "2": [
+      "apps_web_package",
+      "apps_web_package_dependencies",
+      "apps_web_package_dependencies_next",
+      "apps_web_package_dependencies_react",
+      "apps_web_package_dependencies_react_dom",
+      "apps_web_package_devdependencies",
+      "apps_web_package_devdependencies_eslint",
+      "apps_web_package_devdependencies_eslint_config_next",
+      "apps_web_package_devdependencies_tailwindcss",
+      "apps_web_package_devdependencies_tailwindcss_postcss",
+      "apps_web_package_devdependencies_types_node",
+      "apps_web_package_devdependencies_types_react",
+      "apps_web_package_devdependencies_types_react_dom",
+      "apps_web_package_devdependencies_typescript",
+      "apps_web_package_name",
+      "apps_web_package_private",
+      "apps_web_package_scripts",
+      "apps_web_package_scripts_build",
+      "apps_web_package_scripts_dev",
+      "apps_web_package_scripts_lint",
+      "apps_web_package_scripts_start",
+      "apps_web_package_version",
+      "eslint",
+      "eslint_config_next",
+      "next",
+      "react",
+      "react_dom",
+      "tailwindcss",
+      "tailwindcss_postcss",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript"
+    ],
+    "3": [
+      "basemodel",
+      "datetime",
+      "services_voice_agent_voice_agent_app_create_app",
+      "services_voice_agent_voice_agent_models",
+      "services_voice_agent_voice_agent_models_baseevent",
+      "services_voice_agent_voice_agent_models_healthresponse",
+      "services_voice_agent_voice_agent_models_interruptedevent",
+      "services_voice_agent_voice_agent_models_latencyspan",
+      "services_voice_agent_voice_agent_models_menuitem",
+      "services_voice_agent_voice_agent_models_modifierchoice",
+      "services_voice_agent_voice_agent_models_modifiergroup",
+      "services_voice_agent_voice_agent_models_now_utc",
+      "services_voice_agent_voice_agent_models_orderevent",
+      "services_voice_agent_voice_agent_models_orderstatus",
+      "services_voice_agent_voice_agent_models_providerfailure",
+      "services_voice_agent_voice_agent_models_sessionstatus",
+      "services_voice_agent_voice_agent_models_startsessionresponse",
+      "services_voice_agent_voice_agent_models_textturnrequest",
+      "services_voice_agent_voice_agent_models_textturnresponse",
+      "services_voice_agent_voice_agent_models_toolevent",
+      "services_voice_agent_voice_agent_models_transcriptsegment",
+      "services_voice_agent_voice_agent_models_turnrole",
+      "services_voice_agent_voice_agent_models_versionedmodel",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_interrupt",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_record_order",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_start_session",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_turn",
+      "services_voice_agent_voice_agent_orchestrator_py_order",
+      "services_voice_agent_voice_agent_orchestrator_py_runtimeerror",
+      "services_voice_agent_voice_agent_orchestrator_py_uuid",
+      "services_voice_agent_voice_agent_orchestrator_stalegenerationerror",
+      "strenum"
+    ],
+    "4": [
+      "declarativebase",
+      "domainevent",
+      "services_voice_agent_voice_agent_models_conversationsession",
+      "services_voice_agent_voice_agent_models_posreceipt",
+      "services_voice_agent_voice_agent_models_turn",
+      "services_voice_agent_voice_agent_providers_mockspeechtotextprovider",
+      "services_voice_agent_voice_agent_providers_mockspeechtotextprovider_transcribe",
+      "services_voice_agent_voice_agent_repository",
+      "services_voice_agent_voice_agent_repository_base",
+      "services_voice_agent_voice_agent_repository_document",
+      "services_voice_agent_voice_agent_repository_eventdocument",
+      "services_voice_agent_voice_agent_repository_py_any",
+      "services_voice_agent_voice_agent_repository_py_order",
+      "services_voice_agent_voice_agent_repository_py_uuid",
+      "services_voice_agent_voice_agent_repository_repository",
+      "services_voice_agent_voice_agent_repository_repository_append_event",
+      "services_voice_agent_voice_agent_repository_repository_bootstrap",
+      "services_voice_agent_voice_agent_repository_repository_close",
+      "services_voice_agent_voice_agent_repository_repository_get",
+      "services_voice_agent_voice_agent_repository_repository_get_menu",
+      "services_voice_agent_voice_agent_repository_repository_get_order",
+      "services_voice_agent_voice_agent_repository_repository_get_receipt",
+      "services_voice_agent_voice_agent_repository_repository_get_session",
+      "services_voice_agent_voice_agent_repository_repository_init",
+      "services_voice_agent_voice_agent_repository_repository_list_events",
+      "services_voice_agent_voice_agent_repository_repository_put",
+      "services_voice_agent_voice_agent_repository_repository_save_menu",
+      "services_voice_agent_voice_agent_repository_repository_save_order",
+      "services_voice_agent_voice_agent_repository_repository_save_receipt",
+      "services_voice_agent_voice_agent_repository_repository_save_session",
+      "services_voice_agent_voice_agent_repository_repository_save_turn",
+      "services_voice_agent_voice_agent_repository_seed"
+    ],
+    "5": [
+      "apps_web_tsconfig",
+      "apps_web_tsconfig_compileroptions",
+      "apps_web_tsconfig_compileroptions_allowjs",
+      "apps_web_tsconfig_compileroptions_esmoduleinterop",
+      "apps_web_tsconfig_compileroptions_incremental",
+      "apps_web_tsconfig_compileroptions_isolatedmodules",
+      "apps_web_tsconfig_compileroptions_jsx",
+      "apps_web_tsconfig_compileroptions_lib",
+      "apps_web_tsconfig_compileroptions_module",
+      "apps_web_tsconfig_compileroptions_moduleresolution",
+      "apps_web_tsconfig_compileroptions_noemit",
+      "apps_web_tsconfig_compileroptions_paths",
+      "apps_web_tsconfig_compileroptions_plugins",
+      "apps_web_tsconfig_compileroptions_resolvejsonmodule",
+      "apps_web_tsconfig_compileroptions_skiplibcheck",
+      "apps_web_tsconfig_compileroptions_strict",
+      "apps_web_tsconfig_compileroptions_target",
+      "apps_web_tsconfig_exclude",
+      "apps_web_tsconfig_include",
+      "apps_web_tsconfig_paths",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "ref_mts",
+      "ref_next_dev_types_ts",
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_node_modules",
+      "ref_src",
+      "ref_ts",
+      "ref_tsx"
+    ],
+    "6": [
+      "services_voice_agent_tests_test_domain",
+      "services_voice_agent_tests_test_domain_test_calculates_modifier_quantity_and_tax",
+      "services_voice_agent_tests_test_domain_test_rejects_missing_required_modifier",
+      "services_voice_agent_tests_test_domain_test_replaces_line_for_correction",
+      "services_voice_agent_voice_agent_domain",
+      "services_voice_agent_voice_agent_domain_add_line",
+      "services_voice_agent_voice_agent_domain_calculate_line",
+      "services_voice_agent_voice_agent_domain_domainvalidationerror",
+      "services_voice_agent_voice_agent_domain_get_item",
+      "services_voice_agent_voice_agent_domain_money",
+      "services_voice_agent_voice_agent_domain_py_decimal",
+      "services_voice_agent_voice_agent_domain_py_order",
+      "services_voice_agent_voice_agent_domain_py_uuid",
+      "services_voice_agent_voice_agent_domain_rationale_20",
+      "services_voice_agent_voice_agent_domain_recalculate",
+      "services_voice_agent_voice_agent_domain_remove_line",
+      "services_voice_agent_voice_agent_domain_replace_line",
+      "services_voice_agent_voice_agent_models_menu",
+      "services_voice_agent_voice_agent_models_order",
+      "services_voice_agent_voice_agent_models_orderline",
+      "services_voice_agent_voice_agent_models_orderlineinput",
+      "services_voice_agent_voice_agent_models_selectedmodifier",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_dispatch",
+      "services_voice_agent_voice_agent_orchestrator_conversationorchestrator_line_from_phrase",
+      "services_voice_agent_voice_agent_repository_sample_menu"
+    ],
+    "7": [
+      "basesettings",
+      "fastapi",
+      "services_voice_agent_tests_test_api",
+      "services_voice_agent_tests_test_api_py_path",
+      "services_voice_agent_tests_test_api_test_mock_mode_order_flow_without_keys",
+      "services_voice_agent_voice_agent_app",
+      "services_voice_agent_voice_agent_app_http_error",
+      "services_voice_agent_voice_agent_config",
+      "services_voice_agent_voice_agent_config_settings",
+      "services_voice_agent_voice_agent_init",
+      "services_voice_agent_voice_agent_init_rationale_1",
+      "services_voice_agent_voice_agent_voice",
+      "services_voice_agent_voice_agent_voice_build_pipecat_pipeline",
+      "services_voice_agent_voice_agent_voice_pipecat_available",
+      "services_voice_agent_voice_agent_voice_py_any",
+      "services_voice_agent_voice_agent_voice_rationale_12",
+      "services_voice_agent_voice_agent_voice_webrtc_capabilities"
+    ],
+    "8": [
+      "package",
+      "package_engines",
+      "package_engines_node",
+      "package_engines_npm",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev_web",
+      "package_scripts_lint",
+      "package_scripts_test",
+      "package_scripts_test_e2e",
+      "package_scripts_typecheck",
+      "package_version",
+      "package_workspaces",
+      "ref_apps",
+      "ref_packages"
+    ],
+    "9": [
+      "apps_web_src_lib_voice_adapter",
+      "apps_web_src_lib_voice_adapter_audiogeneration",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_attachplayout",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_begingeneration",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_connect",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_disconnect",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_interrupt",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_iscurrent",
+      "apps_web_src_lib_voice_adapter_optionalvoiceadapter_requestmicrophone"
+    ],
+    "10": [
+      "services_voice_agent_voice_agent_providers_circuitbreaker",
+      "services_voice_agent_voice_agent_providers_circuitbreaker_allow",
+      "services_voice_agent_voice_agent_providers_circuitbreaker_failure",
+      "services_voice_agent_voice_agent_providers_circuitbreaker_success",
+      "services_voice_agent_voice_agent_providers_resilientlanguageprovider",
+      "services_voice_agent_voice_agent_providers_resilientlanguageprovider_init",
+      "services_voice_agent_voice_agent_providers_resilientlanguageprovider_respond"
+    ],
+    "11": [
+      "services_voice_agent_voice_agent_models_modifiergroup_valid_range",
+      "services_voice_agent_voice_agent_providers_mockpos_submit",
+      "services_voice_agent_voice_agent_providers_py_order",
+      "valueerror"
+    ],
+    "12": [
+      "apps_web_src_app_layout",
+      "apps_web_src_app_layout_metadata",
+      "apps_web_src_app_layout_rootlayout"
+    ],
+    "13": [
+      "apps_web_eslint_config",
+      "apps_web_eslint_config_eslintconfig"
+    ],
+    "14": [
+      "apps_web_next_config",
+      "apps_web_next_config_nextconfig"
+    ],
+    "15": [
+      "apps_web_next_env_d",
+      "apps_web_next_env_d_rationale_5"
+    ],
+    "16": [
+      "apps_web_postcss_config",
+      "apps_web_postcss_config_config"
+    ],
+    "17": [
+      "apps_web_src_app_page",
+      "apps_web_src_app_page_home"
+    ],
+    "18": [
+      "services_voice_agent_main",
+      "services_voice_agent_main_main"
+    ],
+    "19": [
+      "pkg_voice_agent"
+    ],
+    "20": [
+      "scripts_check"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10256410256410256,
+    "1": 0.10252100840336134,
+    "2": 0.06060606060606061,
+    "3": 0.1310483870967742,
+    "4": 0.14112903225806453,
+    "5": 0.06451612903225806,
+    "6": 0.26666666666666666,
+    "7": 0.14705882352941177,
+    "8": 0.11764705882352941,
+    "9": 0.26666666666666666,
+    "10": 0.42857142857142855,
+    "11": 0.5,
+    "12": 0.6666666666666666,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0
+  },
+  "gods": [
+    {
+      "id": "services_voice_agent_voice_agent_repository_repository",
+      "label": "Repository",
+      "degree": 40
+    },
+    {
+      "id": "services_voice_agent_voice_agent_orchestrator_conversationorchestrator",
+      "label": "ConversationOrchestrator",
+      "degree": 31
+    },
+    {
+      "id": "services_voice_agent_voice_agent_models_order",
+      "label": "Order",
+      "degree": 22
+    },
+    {
+      "id": "services_voice_agent_voice_agent_orchestrator_stalegenerationerror",
+      "label": "StaleGenerationError",
+      "degree": 22
+    },
+    {
+      "id": "services_voice_agent_voice_agent_domain_domainvalidationerror",
+      "label": "DomainValidationError",
+      "degree": 20
+    },
+    {
+      "id": "services_voice_agent_voice_agent_models_posreceipt",
+      "label": "PosReceipt",
+      "degree": 20
+    },
+    {
+      "id": "services_voice_agent_voice_agent_models_versionedmodel",
+      "label": "VersionedModel",
+      "degree": 18
+    },
+    {
+      "id": "services_voice_agent_voice_agent_models_menu",
+      "label": "Menu",
+      "degree": 18
+    },
+    {
+      "id": "apps_web_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "services_voice_agent_voice_agent_models_orderlineinput",
+      "label": "OrderLineInput",
+      "degree": 16
+    }
+  ],
+  "surprises": [
+    {
+      "source": "test_mock_mode_order_flow_without_keys()",
+      "target": "create_app()",
+      "source_files": [
+        "services/voice-agent/tests/test_api.py",
+        "services/voice-agent/voice_agent/app.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "repository()",
+      "target": "Repository",
+      "source_files": [
+        "services/voice-agent/tests/test_services.py",
+        "services/voice-agent/voice_agent/repository.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "repository()",
+      "target": "seed()",
+      "source_files": [
+        "services/voice-agent/tests/test_services.py",
+        "services/voice-agent/voice_agent/repository.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "test_pos_is_idempotent()",
+      "target": "add_line()",
+      "source_files": [
+        "services/voice-agent/tests/test_services.py",
+        "services/voice-agent/voice_agent/domain.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "test_pos_is_idempotent()",
+      "target": "OrderLineInput",
+      "source_files": [
+        "services/voice-agent/tests/test_services.py",
+        "services/voice-agent/voice_agent/models.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
